@@ -1,4 +1,4 @@
-#require "pry"  
+require "pry"  
   def square_array(array)
   array.map do |element|
     element * element
@@ -40,6 +40,9 @@ def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
  
   planeteer_calls.find do |word|
+   
+   binding.pry 
+   
     valid_calls.include?(word)
     
    
